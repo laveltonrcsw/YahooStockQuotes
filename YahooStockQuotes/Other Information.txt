@@ -1,0 +1,52 @@
+"http://download.finance.yahoo.com/d/quotes.csv?s=APPL&f=l1"
+
+echo "Equity Indices"
+echo "           Price "
+echo "           ------"
+STKQ=$(curl -s "http://download.finance.yahoo.com/d/quotes.csv?s=^DJI&f=l1")
+#STKC=$(curl -s "http://download.finance.yahoo.com/d/quotes.csv?s=^DJI&f=c1")
+echo "Dow.....: " $STKQ
+STKQ=$(curl -s "http://download.finance.yahoo.com/d/quotes.csv?s=^IXIC&f=l1")
+echo "Nasdaq..: " $STKQ
+STKQ=$(curl -s "http://download.finance.yahoo.com/d/quotes.csv?s=^GSPC&f=l1")
+echo "S&P 500.: " $STKQ
+echo ""
+
+
+MyStk="CSCO EWA EWG EWH EWN EWU KO MSFT QQQQ SGMS"
+echo "My Portfolio"
+echo -e "\tPrice "
+echo -e "\t------"
+for stock in $MyStk
+do
+STKQ=$(curl -s "http://download.finance.yahoo.com/d/quotes.csv?s="+$stock+"&f=l1")
+#			STKQ=$(curl -s "http://www.google.com/finance?q=NASDAQ:"+$stock+|grep '"pr"' | egrep -o '>[0-9.]+<' |sed -e 's/>//g' -e 's/<//g')
+#			STKQ=$(curl -s "http://www.google.com/finance?q="+$stock+|grep '"pr"' | egrep -o '>[0-9.]+<' |sed -e 's/>//g' -e 's/<//g')
+echo -e "$stock:\t$STKQ"
+done
+echo ""
+
+WthStk="AIG FNM FRE PTN DNE SIRI"
+echo "Stock(s) To Watch"
+echo -e "\tPrice "
+echo -e "\t------"
+for stock in $WthStk
+do
+STKQ=$(curl -s "http://download.finance.yahoo.com/d/quotes.csv?s="+$stock+"&f=l1")
+echo -e "$stock:\t$STKQ"
+done
+echo ""
+
+WthStk="NC TBSI A AAPL F O SOL CCE ALB CVH GOOG ALU WMT HCN RUBO"
+echo "Brenda Portfolio"
+echo -e "\tPrice "
+echo -e "\t------"
+for stock in $WthStk
+do
+STKQ=$(curl -s "http://download.finance.yahoo.com/d/quotes.csv?s="+$stock+"&f=l1")
+echo -e "$stock:\t$STKQ"
+done
+echo ""
+exit 0
+
+

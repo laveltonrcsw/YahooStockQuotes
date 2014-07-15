@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		202E25071975D7D000D14C69 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 202E25061975D7D000D14C69 /* main.c */; };
 		202E25091975D7D000D14C69 /* YahooStockQuotes.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 202E25081975D7D000D14C69 /* YahooStockQuotes.1 */; };
+		202E25111975D93F00D14C69 /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 202E25101975D93F00D14C69 /* libcurl.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		202E25031975D7D000D14C69 /* YahooStockQuotes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = YahooStockQuotes; sourceTree = BUILT_PRODUCTS_DIR; };
 		202E25061975D7D000D14C69 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		202E25081975D7D000D14C69 /* YahooStockQuotes.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = YahooStockQuotes.1; sourceTree = "<group>"; };
+		202E250F1975D91200D14C69 /* Other Information.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Other Information.txt"; sourceTree = "<group>"; };
+		202E25101975D93F00D14C69 /* libcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurl.dylib; path = usr/lib/libcurl.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				202E25111975D93F00D14C69 /* libcurl.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				202E25051975D7D000D14C69 /* YahooStockQuotes */,
+				202E25121975D94A00D14C69 /* Frameworks */,
 				202E25041975D7D000D14C69 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,9 +66,18 @@
 			isa = PBXGroup;
 			children = (
 				202E25061975D7D000D14C69 /* main.c */,
+				202E250F1975D91200D14C69 /* Other Information.txt */,
 				202E25081975D7D000D14C69 /* YahooStockQuotes.1 */,
 			);
 			path = YahooStockQuotes;
+			sourceTree = "<group>";
+		};
+		202E25121975D94A00D14C69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				202E25101975D93F00D14C69 /* libcurl.dylib */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
