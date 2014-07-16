@@ -31,6 +31,7 @@
 		202E25081975D7D000D14C69 /* YahooStockQuotes.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = YahooStockQuotes.1; sourceTree = "<group>"; };
 		202E250F1975D91200D14C69 /* Other Information.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Other Information.txt"; sourceTree = "<group>"; };
 		202E25101975D93F00D14C69 /* libcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurl.dylib; path = usr/lib/libcurl.dylib; sourceTree = SDKROOT; };
+		2044E8C11976204A00FB276C /* Yahoo Stock Quote API (CSV) - Special Tags.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Yahoo Stock Quote API (CSV) - Special Tags.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +68,7 @@
 			children = (
 				202E25061975D7D000D14C69 /* main.c */,
 				202E250F1975D91200D14C69 /* Other Information.txt */,
+				2044E8C11976204A00FB276C /* Yahoo Stock Quote API (CSV) - Special Tags.txt */,
 				202E25081975D7D000D14C69 /* YahooStockQuotes.1 */,
 			);
 			path = YahooStockQuotes;
@@ -241,6 +243,7 @@
 				202E250E1975D7D000D14C69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
